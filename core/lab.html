@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>The Alchemy Lab</title>
+        <link rel="shortcut icon" type="image" href="images/favicrop.png">
+        <link rel=stylesheet type="text/css" href="../CSS/maincss.css">
+        <script src="/js/opennotes.js"></script>
+    </head>
+    <style>
+        header h1{
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 450px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        background-image:url('../core/images/banner-lab.png');
+          background-size: 100% 100%;
+        background-repeat: no-repeat;
+        }
+    </style>
+    <body>
+        <div id="wrapper">
+        <header>
+            <h1 style="font-size: 0px">.</h1>
+        </header>
+        <nav>
+            <ul class="main_menu">
+            <li><a href="bedroom.html">Bedroom</a></li>
+            <li><a href="quiz.html">The Quiz</a></li>
+            <li><a href="kitchen.html">Kitchen</a></li>
+            <li><a href="library.html">Library</a></li>
+            </ul>               
+        </nav>
+        
+        <!-- A small Stylesheet for this webpage, most handled by the external -->
+        <style>
+            h2 {
+                margin-top: 50px;
+                margin-bottom: 0px;
+            }  
+            
+            p {
+                margin-top: 0px;
+            }
+        </style>
+            
+    <h1 style="margin-top: 60px; margin-bottom: 50px;">You have entered The Alchemy Lab</h1>
+    <h2>The Room Itself</h2>
+        <p style="margin-bottom: 2px;">The sounds of clanging machinery and glass shifting can be heard as you enter the room, smells of mixing chemicals bombard your nostrils and overwhelm your senses. Smoke of all colours flow from a potion being brewed within a cauldron in the dead centre of the laboratory, four crowded desks line around the area, each of them filled to the brim with notes and recipes. At a glance, each desk seems to be dedicated to certain creations and spells.</p>
+        <p>Each wall is covered in large shelves filled to the brim with potions, plants, chemicals, enchanted objects, supplies and even some live bugs and lizards. Between two of these shelves sit an arcane table, a rather meanacing looking piece of furniture covered from top to bottom in ancient runes and decorated in skulls, maybe it's best you don't touch it.</p>
+        <p>Finally, an entrance-way to an outside balcony is located to your right, the smoke within the room gravitates out of it before dispersing under the moonlight outside.</p>
+            
+    <h2>The Cauldron</h2>
+        <p>As you approach the Cauldron you can hear the bubbling solution boil, a magic stick levitates above, occasionally swooping down to rythmically mix the chemicals inside without the wizard's presence. Breathing in the smoke makes you feel briefly euphoric as you let out an uncontrollable soft laugh, perhaps the wizard is brewing a mood affecting potion? You decide that it might not be the smartest idea to be standing so close to a magical smoking pot that controls your mood and take a step back.</p>
+            
+    <h2>The First Desk - Enchantment</h2>
+            <p>The closest desk to the Cauldron, messy scribbles and mountains of unorganised notes are stacked up high upon this desk alongside some rather bland looking clothes, flicking through some of the notes left scattered you quickly learn these are enchated items of various effects, though due to vague descriptors you decide it's best not to try on any of them. However, at the centre of the desk lays an unfinished note titled "Necklace of Laughter" <button onclick="openobject.call(this)" data-target-id="firstnote">Open it?</button></p>
+            
+            <div id="firstnote" class="notes" style="display: none;">
+                <p style="margin-bottom: 2px;">The 'Necklace of Laughter' enchantment is nearly completed, I have found the arcane solutions and ingredients to perfect it. - All it took was to isolate the chemical compound of 'Nitrous Oxide' or 'Laughing Gas' and mix it with a magic spell to create the perfect feeling!</p>
+                <p style="margin-bottom: 2px;">You need:</p>
+                <ul>
+                    <li>Nitrous Oxide - Laughing Gas</li>
+                    <li>Goblin Teeth</li>
+                    <li>Elf eyes</li>
+                    <li>Spider Eggs</li>
+                    <li>The soul of a fairy</li>
+                </ul>
+            </div>
+            
+    <h2>The Second Desk - Pyromancy </h2>
+            <p>Floating balls of flames hover around this desk, shining light on the research below and giving off a gentle but comforting warmth, surely it's not safe to leave fire so close to paper and wood unattended... nonetheless you continue to investigate to find documented progress on how these floating orbs were achieved, for some reason you doubt the idea of floating bits of fire being that easily marketable, <button onclick="openobject.call(this)" data-target-id="secondnote">Open it?</button></p>
+            
+            <div id="secondnote" class="notes" style="display: none;">
+                <p style="margin-bottom: 2px;">Floating Orbs of Fire, safe for the whole family! I'm going to make a killing with this spell, the trick was finding a chemical with a low boiling point and casting the flames around them. It just so happened it was helium! allowing me to use balloons as a stepping stone, sometimes my genius amazes even myself. The only thing left to workout is why they randomly explode without warning!</p>
+            </div>
+            
+    <h2>The Third Desk - Destruction</h2>
+        <p>Unsettling for such a kind looking wizard, this desk has a lot of detail about destruction spells and potions. You feel it's best not to touch any of the potions on this desk. From further investigation it seems as though the wizard has been experimenting primarily with acid, that doesn't seem very magical... trial and error has left many objects placed on this desk in tatters, from half melted swords to what you can best assume is remains of some kind of creature bone. The middle of the desk shows the wizards findings on acid, you can never have enough knowledge on scary chemicals, <button onclick="openobject.call(this)" data-target-id="thirdnote">Open it?</button></p>
+    
+            <div id="thirdnote" class="notes" style="display: none;">
+                <p style="margin-bottom: 2px;">I've perfected a potion that can disolve any object it's poured on, from steel, concrete and even diamond! After studying acid and finding out the main consistent element is Hydrogen I crafted a solution so amazing even I forgot how it works, oh well. If I can make it once I can make it again, eventually!</p>
+            </div>
+        
+    <h2>The Fourth Desk - The Moon?</h2>
+        <p>The final desk sits the furthest away from the others, appearing isolated and unremarkable yet you cannot shake the feeling that something important is hidden within. The desk is lined with an elegant fabric with a large symbol of a moon embroided across it. Eight books lay flat on the table, each one symbolising a different phase of the moon. You open the first book to reveal it's completely blank, closing it and placing it down, before you leave the desk you notice that the <a style ="text-decoration: none; color:#CCCCCC"; href="garden.html">'Seventh Moon'</a> book appears to have small specks of dirt scattered on top.</p>
+            
+    <h2>The Shelves</h2>
+        <p>The shelves are lined from top to bottom with peculiar trinkets, ingredients and miscellaneous items that have been enchanted by the wizard, some of note include a rather extravagant golden mask giving off a strange feeling of godhood with a plaque stating "a sixth house and a tribe unmourned", a simple Ocarina which makes you feel like you are losing time staring at, a pair of boots labelled as "boots of blinding speed!" accompanied by a caution stating "these boots really do make you blind!" you begin to wonder if he's as competent as you initally perceived.</p>
+            
+    <h2>The Balcony</h2>
+        <p>A cold breeze rushes through you as you take a step outside, contrasting the warmth of the heated laboratory just behind you. You can see for what feels like miles outside of the tower, every direction encased in a dense thick forest. You look up and notice another balcony above you, it's connected to the wizard's bedroom. Peering down from the bedroom balcony is a small black cat with bright green eyes that cut through the darkness of the night, perhaps you should find the time to say hello.</p>

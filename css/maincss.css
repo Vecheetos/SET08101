@@ -1,0 +1,95 @@
+/* Below Tweaks the background image of the website and the main body*/
+body{
+    color: #CCCCCC;
+    background-image:url('../core/images/back.jpg');
+    font-size: 18px;
+}
+
+strong{
+    color: #FF9900;
+}
+/* Below let's me center images and objects */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* This Adjusts the main wrapper (seperate to background) */
+#wrapper{
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: #181818;    
+    padding: 32px;
+}
+
+header h1{
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 200px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-image:url('../core/images/garden.jpg')
+}
+
+h1{
+    text-align: center;
+}
+
+/* This Creates the Main Nav Bar that hosts the hyperlinks */
+.main_menu{
+    padding: 5px 0 5px 0;
+    text-align: center;
+    line-height: 32px;
+    background-color: #191919;
+}
+
+/* This adjusts the width of the Banner Image */
+ul.main_menu{
+    margin-top: 50px;
+}
+
+.main_menu li{
+    display: inline;
+    padding: 0 10px 0 10px;
+    font-size: 16px;
+}
+
+/* This adjusts the hyperlinks in the Main Nav Bar */
+.main_menu a{
+    text-decoration: none;
+    color: #CCCCCC;
+    padding: 8px;
+    font-variant: small-caps; 
+    font-size: 32px;
+}
+
+
+
+/* This adds an openable Journal entry */
+.notes{
+    background-color: #E0C9A6;
+    font-family: "Pristina";
+    font-size: 40px;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    color: #5C6274;
+    width: 80%;
+    margin:auto;
+}
+
+button {
+  border: none;
+  background-color: #181818;
+  color: #FF9900;
+  font-family: "arial";
+  font-weight: bold;
+  padding: none;
+  font-size: 15px;
+}
+    

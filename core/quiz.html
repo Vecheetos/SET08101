@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>The Tower</title>
+        <link rel="shortcut icon" type="image" href="images/favicrop.png">
+        <link rel=stylesheet type="text/css" href="../CSS/maincss.css">
+    </head>
+    <style>
+     header h1{
+     text-transform: uppercase;
+     text-align: center;
+     line-height: 450px;
+     margin-right: 0;
+     margin-left: 0;
+     margin-top: 0;
+     margin-bottom: 0;
+     background-image:url('../core/images/banner-quiz.PNG');
+      background-size: 100% 100%;
+     background-repeat: no-repeat;
+    }
+    </style>
+    <body>
+        <div id="wrapper">
+        <header>
+            <h1 style="font-size: 0px">.</h1>
+        </header>
+        <nav>
+            <ul class="main_menu">
+            <li><a href="bedroom.html">Bedroom</a></li>
+            <li><a href="lab.html">Alchemy Lab</a></li>
+            <li><a href="kitchen.html">Kitchen</a></li>
+            <li><a href="library.html">Library</a></li>
+            </ul>               
+        </nav>
+    
+    <!-- Introduction Wizard Here -->
+    <img src="images/wizard.png" alt="This was a picture.. not anymore" class="center" width="auto" height="auto">
+    <h1>Greetings Traveler! Welcome to 'The Tower'</h1>
+    <h1 style="margin-bottom: 0;">Many Adventurers have attempted to solve my quiz, none have passed!</h1>
+    <h1 style="margin-top: 0;">Do you think you are up to the challenge?</h1>
+                      
+            <!-- This Style Section is used to Style the quiz, the main bulk was inspired by a guide through code actually -->
+                                        <!-- https://codeactually.com/interactivequiz.html -->
+        <style>
+            label {
+                display: block;
+            }
+
+            input {
+                width: 30px;
+                margin-left: 20px;
+            }
+
+            button {
+                width: 100px;
+                margin-top: 20px;
+            }
+        </style>
+            
+        <h2 style="margin-bottom: 0; margin-top: 80px";>Ready to attempt my quiz? Let's see about that!</h2>
+        <p style="margin-top: 0";>Make sure to explore all rooms within 'The Tower' before attempting the questions.. you might find some help!</p>
+            
+        <!-- All "name" tags must be the same per question for the value counter to work, yet different for each following question -->    
+            <form id="form1">
+            <script src="/js/quizjs.js"></script>
+            <h3>What is my favourite book?</h3>
+                <label for="var_string"><input type="radio" name="book" value="1" />The colour of Magic.</label>
+                <label for="var_join"><input type="radio" name="book" value="0" />Chamber of Secrets.</label>
+                <label for="var_info"><input type="radio" name="book" value="0" />Test of the twins.</label>
+                <label for="var_condition"><input type="radio" name="book" value="0" />Stone of tears.</label>
+
+            <h3>How do I pass the time?</h3>
+                <label for="sub_string"><input type="radio" name="time" value="0" />Fighting ghouls.</label>
+                <label for="sub_join"><input type="radio" name="time" value="0" />Sun tanning.</label>
+                <label for="sub_info"><input type="radio" name="time" value="1" />My super-secret garden.</label>
+                <label for="sub_condition"><input type="radio" name="time" value="0" />Partying.</label>
+
+            <h3>What is my pets name?</h3>
+                <label for="cat_string"><input type="radio" name="pet" value="0" />Annie.</label>
+                <label for="cat_join"><input type="radio" name="pet" value="1" />Fore.</label>
+                <label for="cat_info"><input type="radio" name="pet" value="0" />Sceptre.</label>
+                <label for="cat_condition"><input type="radio" name="pet" value="0" />Spencer.</label>
+
+            <h3>What is the key element in acid?</h3>
+                <label for="if_string"><input type="radio" name="acid" value="0" />Helium.</label>
+                <label for="if_join"><input type="radio" name="acid" value="0" />Chromium.</label>
+                <label for="if_info"><input type="radio" name="acid" value="0" />Cobalt.</label>
+                <label for="if_condition"><input type="radio" name="acid"  value="1" />Hydrogen.</label>
+
+            <h3>What chemical has the lowest boiling point of all the elements?</h3>
+                <label for="var_string"><input type="radio" name="lowest" value="0" />Barium.</label>
+                <label for="var_join"><input type="radio" name="lowest" value="0" />Hydrogen.</label>
+                <label for="var_info"><input type="radio" name="lowest" value="1" />Helium.</label>
+                <label for="var_condition"><input type="radio" name="lowest" value="0" />Krypton.</label>
+
+            <h3>Laughing gas is quite fun! What is it’s real name?</h3>
+                <label for="sub_string"><input type="radio" name="funny" value="0" />Joker toxins.</label>
+                <label for="sub_join"><input type="radio" name="funny" value="1" />Nitrous Oxide.</label>
+                <label for="sub_info"><input type="radio" name="funny" value="0" />Humerous Oxide.</label>
+                <label for="sub_condition"><input type="radio" name="funny" value="0" />Humerous Gas.</label>
+
+            <h3>What is my favourite flower?</h3>
+                <label for="cat_string"><input type="radio" name="flower" value="0" />Roses.</label>
+                <label for="cat_join"><input type="radio" name="flower" value="0" />Daisies.</label>
+                <label for="cat_info"><input type="radio" name="flower" value="0" />Poppies.</label>
+                <label for="cat_condition"><input type="radio" name="flower" value="1" />Thistle.</label>
+
+            <h3>Most species of eucalyptus are native to which country?</h3>
+                <label for="if_string"><input type="radio" name="country" value="1" />Australia.</label>
+                <label for="if_join"><input type="radio" name="country" value="0" />Africa.</label>
+                <label for="if_info"><input type="radio" name="country" value="0" />Ireland.</label>
+                <label for="if_condition"><input type="radio" name="country"  value="0" />China.</label>
+                
+            <h3>What is the most important colour plants use to photosynthesise?</h3>
+                <label for="var_string"><input type="radio" name="photo" value="0" />Green light.</label>
+                <label for="var_join"><input type="radio" name="photo" value="1" />Violet light.</label>
+                <label for="var_info"><input type="radio" name="photo" value="0" />Brown light.</label>
+                <label for="var_condition"><input type="radio" name="photo" value="0" />Red light.</label>
+
+            <h3>Which fish is used in kedgeree?</h3>
+                <label for="sub_string"><input type="radio" name="kedgeree" value="0" />Salmon.</label>
+                <label for="sub_join"><input type="radio" name="kedgeree" value="0" />Sardines.</label>
+                <label for="sub_info"><input type="radio" name="kedgeree" value="1" />Smoked Haddock.</label>
+                <label for="sub_condition"><input type="radio" name="kedgeree" value="0" />Cod.</label>
+
+            <h3>What gives chilli it's heat?</h3>
+                <label for="cat_string"><input type="radio" name="chilli" value="1" />Capsaicin.</label>
+                <label for="cat_join"><input type="radio" name="chilli" value="0" />Capsicum.</label>
+                <label for="cat_info"><input type="radio" name="chilli" value="0" />Capri-sun.</label>
+                <label for="cat_condition"><input type="radio" name="chilli" value="0" />Raigira.</label>
+
+            <h3>I used a spell to turn all carrots orange! What were they before?</h3>
+                <label for="if_string"><input type="radio" name="carrot" value="0" />Green.</label>
+                <label for="if_join"><input type="radio" name="carrot" value="0" />Brown.</label>
+                <label for="if_info"><input type="radio" name="carrot" value="1" />Purple.</label>
+                <label for="if_condition"><input type="radio" name="carrot"  value="0" />Always Orange, you are lying!</label>
+                
+            <h3>How long was the hundred years war?</h3>
+                <label for="var_string"><input type="radio" name="war" value="0" />100 years.</label>
+                <label for="var_join"><input type="radio" name="war" value="1" />116 years.</label>
+                <label for="var_info"><input type="radio" name="war" value="0" />120 years.</label>
+                <label for="var_condition"><input type="radio" name="war" value="0" />99 years.</label>
+
+            <h3>Who was the last Russian Tsar before the revolution?</h3>
+                <label for="sub_string"><input type="radio" name="tsar" value="0" />Rasputin.</label>
+                <label for="sub_join"><input type="radio" name="tsar" value="0" />Romanov.</label>
+                <label for="sub_info"><input type="radio" name="tsar" value="0" />Glukoza.</label>
+                <label for="sub_condition"><input type="radio" name="tsar" value="1" />Nicholas II.</label>
+
+            <h3>How did Alexander the Great untie the Gordian Knot?</h3>
+                <label for="cat_string"><input type="radio" name="knot" value="1" />He cut it with his sword.</label>
+                <label for="cat_join"><input type="radio" name="knot" value="0" />He wet the rope.</label>
+                <label for="cat_info"><input type="radio" name="knot" value="0" />He untangled it after two weeks.</label>
+                <label for="cat_condition"><input type="radio" name="knot" value="0" />He burnt it.</label>
+
+        <button type="submit" value="Submit">Submit</button>
+        <p>"It appears you have scored <span id="grade">__</span> points!"</p>
+        <p id="grade2"></p>
+    </form>
+    

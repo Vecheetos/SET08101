@@ -1,0 +1,7 @@
+document.querySelectorAll(".openable").forEach(function(current) {
+
+current.addEventListener("click", function(e) {
+  current.classList.remove("openable");
+}, false);
+
+});
